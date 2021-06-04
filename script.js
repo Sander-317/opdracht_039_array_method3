@@ -105,3 +105,11 @@ const superheroes = [
     "weight": "unknown"
     }
     ]
+
+    //OPDRACHT 1
+
+    const superheroesNames = superheroes.map((item) => {
+        return item.name
+    })
+
+    console.log(superheroesNames)
