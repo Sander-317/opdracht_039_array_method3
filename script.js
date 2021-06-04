@@ -131,3 +131,12 @@ const superheroes = [
 
     console.log("Opdracht 3 superheroes weight 200")
     console.log(superheroesWeight200)
+
+    //OPDRACHT 4 
+
+    const superheroesFirstAppearances = superheroes.map((item) => {
+        return item.first_appearance
+    })
+
+    console.log("Opdracht 4 superheroes first appearance")
+    console.log(superheroesFirstAppearances)
