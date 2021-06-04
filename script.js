@@ -138,5 +138,21 @@ const superheroes = [
         return item.first_appearance
     })
 
-    console.log("Opdracht 4 superheroes first appearance")
+    console.log("Opdracht 4 superheroes first appearance:")
     console.log(superheroesFirstAppearances)
+
+    //OPDRACHT 5 
+
+    const superheroesDC = superheroes.filter((item) => {
+        return item.publisher === "DC Comics"
+    })
+
+    console.log("Opdracht 5 superheroes of DC Comics:")
+    console.log(superheroesDC)
+
+    const superheroesMarvel = superheroes.filter((item) => {
+        return item.publisher === "Marvel Comics"
+    })
+
+    console.log("Opdracht 5 superheroes of Marvel:")
+    console.log(superheroesMarvel)
