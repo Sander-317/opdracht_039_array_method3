@@ -122,3 +122,12 @@ const superheroes = [
 
     console.log("Opdracht 2 superheroes weight:")
     console.log(superheroesWeight)
+
+    //OPDRACHT 3 
+
+    const superheroesWeight200 = superheroes.filter((item) => {
+        return item.weight === "200"
+    })
+
+    console.log("Opdracht 3 superheroes weight 200")
+    console.log(superheroesWeight200)
