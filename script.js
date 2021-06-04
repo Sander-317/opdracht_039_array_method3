@@ -192,3 +192,24 @@ const superheroes = [
     // console.log(superheroesMarvelWeightToNumbers)
     // console.log(superheroesMarvelWeightToNumbersNumbersCheck)
     console.log(superheroesMarvelWeightTotal)
+
+    //OPDRACHT 8 
+
+    const superheroesTotalWeightInNumbers = superheroesMarvelWeightToNumbersNumbersCheck.concat(superheroesDCWeightToNumbers)
+
+    const HighestWeightSuperheroes = superheroesTotalWeightInNumbers.reduce((a, b) => {
+        return Math.max(a, b)
+    })
+
+    const HighestWeightSuperheroesToString = HighestWeightSuperheroes.toString() 
+
+    function findTheHeaviestSuperhero(array) {
+        return array.weight == HighestWeightSuperheroesToString
+        }
+    
+    // console.log(superheroesTotalWeightInNumbers)
+    // console.log(HighestWeightSuperheroes)
+    // console.log(HighestWeightSuperheroesToString)
+    
+    console.log("Opdracht 8 the heaviest superhero is: ")
+    console.log(superheroes.find(findTheHeaviestSuperhero))
