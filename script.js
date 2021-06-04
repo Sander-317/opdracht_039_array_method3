@@ -172,6 +172,9 @@ const superheroes = [
     // console.log(superheroesDCWeightToNumbers)
     console.log(superheroesDCWeightTotal)
 
+    
+    //OPDRACHT 7 
+    
     const superheroesMarvelWeight = superheroesMarvel.map((item) => {
         return item.weight
     })
@@ -185,7 +188,7 @@ const superheroes = [
         return accumulator + currentValue
         } , 0) 
 
-    console.log(`Opdracht 6 total weight of Marvel superheroes: ${superheroesMarvelWeightTotal} pounds`)
+    console.log(`Opdracht 7 total weight of Marvel superheroes: ${superheroesMarvelWeightTotal} pounds`)
     // console.log(superheroesMarvelWeightToNumbers)
     // console.log(superheroesMarvelWeightToNumbersNumbersCheck)
     console.log(superheroesMarvelWeightTotal)
