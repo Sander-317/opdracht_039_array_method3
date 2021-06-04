@@ -111,5 +111,14 @@ const superheroes = [
     const superheroesNames = superheroes.map((item) => {
         return item.name
     })
-    console.log("Opdracht 1 superheores names")
+    console.log("Opdracht 1 superheores names:")
     console.log(superheroesNames)
+
+    //OPDRACHT 2 
+
+    const superheroesWeight = superheroes.filter((item) => {
+        return item.weight < 190 || "unknown"
+    })
+
+    console.log("Opdracht 2 superheroes weight:")
+    console.log(superheroesWeight)
