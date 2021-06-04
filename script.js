@@ -111,5 +111,5 @@ const superheroes = [
     const superheroesNames = superheroes.map((item) => {
         return item.name
     })
-
+    console.log("Opdracht 1 superheores names")
     console.log(superheroesNames)
