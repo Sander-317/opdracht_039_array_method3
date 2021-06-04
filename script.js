@@ -156,3 +156,36 @@ const superheroes = [
 
     console.log("Opdracht 5 superheroes of Marvel:")
     console.log(superheroesMarvel)
+
+    //OPDRACHT 6 
+
+    const superheroesDCWeight = superheroesDC.map((item) => {
+        return item.weight
+    })
+    const superheroesDCWeightToNumbers = superheroesDCWeight.map((i) => Number(i)) 
+
+    const superheroesDCWeightTotal = superheroesDCWeightToNumbers.reduce((accumulator, currentValue)  => {
+        return accumulator + currentValue
+        } , 0) 
+
+    console.log(`Opdracht 6 total weight of DC superheroes: ${superheroesDCWeightTotal} pounds`)
+    // console.log(superheroesDCWeightToNumbers)
+    console.log(superheroesDCWeightTotal)
+
+    const superheroesMarvelWeight = superheroesMarvel.map((item) => {
+        return item.weight
+    })
+    const superheroesMarvelWeightToNumbers = superheroesMarvelWeight.map((i) => Number(i)) 
+
+    const superheroesMarvelWeightToNumbersNumbersCheck = superheroesMarvelWeightToNumbers.filter((item) => {
+        return (parseInt(item) == item)
+    })
+
+    const superheroesMarvelWeightTotal = superheroesMarvelWeightToNumbersNumbersCheck.reduce((accumulator, currentValue)  => {
+        return accumulator + currentValue
+        } , 0) 
+
+    console.log(`Opdracht 6 total weight of Marvel superheroes: ${superheroesMarvelWeightTotal} pounds`)
+    // console.log(superheroesMarvelWeightToNumbers)
+    // console.log(superheroesMarvelWeightToNumbersNumbersCheck)
+    console.log(superheroesMarvelWeightTotal)
